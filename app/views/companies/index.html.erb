@@ -1,9 +1,8 @@
 <h1> Companies </h1>
 
-
 <% companies = Company.all %>
 
-<p> There are <%= Compnany.all.count%> companies: </p>
+<p> There are <%= Company.all.count%> companies: </p>
 
 <ul>
     <% for company in companies %>
@@ -11,10 +10,4 @@
     <%= company["name"] %>
     </li>
     <% end %>
-</ul>
-
-
-<ul>
-    <li>Apple</li>
-    <li>Amazon</li>
 </ul>
